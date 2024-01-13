@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #303030;
+  color: aliceblue;
+  padding-bottom: 20px;
+}
+h1 {
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  max-width: 800px;
+}
+.course-1-box,
+.course-2-box,
+.course-3-box,
+.course-4-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(37, 254, 182, 0.552);
+  height: fit-content;
+  font-family: sans-serif;
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 20px;
+  padding: 25px;
+}
+.course-3-box > .course-3 > h2 {
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.course-1,
+.course-2,
+.course-3,
+.course-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+h2 {
+  text-align: center;
+
+  width: 280px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+ul {
+  margin-top: 15px;
+  margin-left: 19px;
+}
+ul > li {
+  margin-bottom: 8px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 10px 80px;
+  border-radius: 20px;
+  background-color: rgb(224, 248, 120);
+  color: #4e4c4c;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
