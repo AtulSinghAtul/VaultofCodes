@@ -11,41 +11,106 @@
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  background-color: #303030;
+  height: fit-content;
+  background: linear-gradient(to left top, blue, rgb(253, 125, 116));
   color: aliceblue;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 h1 {
+  background: linear-gradient(in hsl, rgb(101, 101, 255), rgb(251, 52, 52));
   margin-top: 30px;
   font-size: 40px;
   font-family: sans-serif;
+  padding: 8px 30px;
+  border-radius: 2rem;
 }
 .course-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  column-gap: 60px;
+  row-gap: 30px;
   margin-top: 30px;
   max-width: 800px;
 }
+
+.course-1-box {
+  /* background-color: #ff9bd2; */
+  background: linear-gradient(0deg, blue, green 40%, red);
+}
+.course-2-box {
+  /* background-color: #ffb534; */
+  background: linear-gradient(0.25turn, red, 60%, rgb(0, 251, 255));
+}
+.course-3-box {
+  /* background-color: #65b741; */
+  background: linear-gradient(
+    45deg,
+    rgb(255, 127, 251) 0 50%,
+    rgb(200, 255, 0) 50% 100%
+  );
+}
+.course-4-box {
+  /* background-color: #dc84f3; */
+  background: linear-gradient(45deg, blue, red);
+}
+
 .course-1-box,
 .course-2-box,
 .course-3-box,
 .course-4-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-color: rgba(37, 254, 182, 0.552);
-  height: fit-content;
-  font-family: sans-serif;
+  padding: 25px;
   border: 2px solid rgb(219, 219, 219);
   border-radius: 20px;
-  padding: 25px;
+
+  height: fit-content;
+  font-family: sans-serif;
+  transition: 0.4s ease-in-out;
+  box-shadow: 5px 4px 15px 0px white;
 }
+
+.course-1-box:hover {
+  background-color: #ff9bd29f;
+  transform: translateY(15px);
+  cursor: pointer;
+}
+.course-2-box:hover {
+  background-color: #ffb534c5;
+  transform: translate3d(5ch, 0.4in, 5em);
+  cursor: pointer;
+}
+.course-3-box:hover {
+  background-color: #a3fc7dc2;
+  transform: rotate(365deg);
+  cursor: pointer;
+}
+.course-4-box:hover {
+  background-color: #e898fcd5;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.webImgBox {
+  position: relative;
+}
+.webImgBox > img {
+  border-radius: 20px;
+  opacity: 0.6;
+  width: 300px;
+}
+.webImgBox > h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .course-3-box > .course-3 > h2 {
   font-size: 26px;
   line-height: 35px;
@@ -81,11 +146,15 @@ button {
   outline: none;
   padding: 10px 80px;
   border-radius: 20px;
-  background-color: rgb(224, 248, 120);
+  background: linear-gradient(45deg, rgb(142, 235, 135), rgb(252, 91, 252));
   color: #4e4c4c;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 button:hover {
   background-color: #fff;
