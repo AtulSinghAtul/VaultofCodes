@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(109, 253, 253);
+  width: 100vw;
+  height: 100vh;
+}
