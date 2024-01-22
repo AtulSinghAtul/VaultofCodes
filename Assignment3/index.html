@@ -3,9 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Week 3 Assignment</title>
   </head>
   <body>
-    <h1>Task Title: Interactive User registration Form</h1>
+    <div class="formWrapper">
+      <form action="" id="form">
+        <p id="log"></p>
+        <fieldset>
+          <legend>Form</legend>
+          <label for="fName"
+            ><span>First Name:</span>
+            <input type="text" placeholder="First Name" id="fName" value="Atul"
+          /></label>
+
+          <label for="lName"
+            ><span>Last Name:</span>
+            <input type="text" placeholder="Last Name" id="lName"
+          /></label>
+
+          <label for="email"
+            ><span>Email:</span>
+            <input type="text" placeholder="email" id="email"
+          /></label>
+
+          <label for="password">
+            <span>Password:</span>
+            <input type="password" placeholder="password" id="password"
+          /></label>
+
+          <label for="confirmPassword">
+            <span>Confirm Password:</span>
+            <input
+              type="password"
+              placeholder="confirm password"
+              id="confirmPassword"
+          /></label>
+
+          <label for="dob">
+            <span>Date Of Birth:</span>
+            <input type="date" placeholder="dob" id="dob"
+          /></label>
+
+          <label for="gender">
+            <span>Gender:</span>
+            <select name="gender" id="gender">
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </label>
+
+          <label for="follow"> <span>Tearm And Conditions:</span> </label>
+          <input type="checkbox" name="follow" id="follow" />
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>

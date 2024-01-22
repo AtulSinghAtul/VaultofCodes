@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(109, 253, 253);
+}
+
+.formWrapper {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.formWrapper > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 80%;
+  height: 85%;
+}
+
+label {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  width: 85%;
+}
+legend {
+  font-size: 30px;
+}
+
+input {
+  display: block;
+  width: 70%;
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  background-color: rgb(4, 103, 70);
+  color: rgb(140, 251, 181);
+  cursor: pointer;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+}
+::placeholder {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+
+  .formWrapper > form > fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 80%;
+  }
+}
